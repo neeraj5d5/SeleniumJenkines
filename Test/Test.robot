@@ -27,7 +27,7 @@ Get CSV Data
 #Test
   Set Selenium Timeout  10s
 
-    ${Data}  Get CSV Data  C:\\Users\\R~N~K~V\\Documents\\Neeraj\\Selenium\\Affine labs\\Cupon Creation\\Resource\\Data\\Data1.csv
+    ${Data}  Get CSV Data  F:\\neeraj\\jenkines\\Resource\\Data\\Data1.csv
    :FOR  ${Keys}  IN  @{Data}
     \   Loginp  ${Keys}
     \   Creat Special cupon  ${Keys}
@@ -35,7 +35,7 @@ Get CSV Data
 Order Placing For flash cupon and Special Cupon
    Set Selenium Timeout  60s
    Set Selenium Speed  0.2
-  ${Data}  Get CSV Data  C:\\Users\\R~N~K~V\\Documents\\Neeraj\\Selenium\\Affine labs\\Cupon Creation\\Resource\\Data\\Data.csv
+  ${Data}  Get CSV Data  F:\\neeraj\\jenkines\\Resource\\Data\\Data.csv
    :FOR  ${Keys}  IN  @{Data}
     \   Loginc  ${Keys}
     \   Add City and Searchc  ${Keys}
@@ -45,7 +45,7 @@ Order Placing For flash cupon and Special Cupon
 Placeing Orders PickUP
    Set Selenium Timeout  6s
    Set Selenium Speed  0.2
-  ${Data}  Get CSV Data  C:\\Users\\R~N~K~V\\Documents\\Neeraj\\Selenium\\Affine labs\\Cupon Creation\\Resource\\Data\\PlaceingOrder.csv
+  ${Data}  Get CSV Data  F:\\neeraj\\jenkines\\Resource\\Data\\PlaceingOrder.csv
    :FOR  ${Keys}  IN  @{Data}
     \   Loginc  ${Keys}
     \   GoingToMenu
@@ -57,7 +57,7 @@ Placeing Orders PickUP
 Placeing Orders Delivery
    Set Selenium Timeout  6s
    Set Selenium Speed  0.2
-  ${Data}  Get CSV Data  C:\\Users\\R~N~K~V\\Documents\\Neeraj\\Selenium\\Affine labs\\Cupon Creation\\Resource\\Data\\PlaceingOrder.csv
+  ${Data}  Get CSV Data  F:\\neeraj\\jenkines\\Resource\\Data\\PlaceingOrder.csv
    :FOR  ${Keys}  IN  @{Data}
     \   Loginc  ${Keys}
     \   GoingToMenu
@@ -69,14 +69,14 @@ Placeing Orders Delivery
 Enableing Pay at Hotel
     Set Selenium Timeout  10s
 
-    ${Data}  Get CSV Data  C:\\Users\\R~N~K~V\\Documents\\Neeraj\\Selenium\\Affine labs\\Cupon Creation\\Resource\\Data\\Data1.csv
+    ${Data}  Get CSV Data  F:\\neeraj\\jenkines\\Resource\\Data\\Data1.csv
    :FOR  ${Keys}  IN  @{Data}
     \   Loginp  ${Keys}
     \   Pay At Restarent Yes
 Ordering With Out Payment
      Set Selenium Timeout  6s
         Set Selenium Speed  0.2
-  ${Data}  Get CSV Data  C:\\Users\\R~N~K~V\\Documents\\Neeraj\\Selenium\\Affine labs\\Cupon Creation\\Resource\\Data\\PlaceingOrder1.csv
+  ${Data}  Get CSV Data  F:\\neeraj\\jenkines\\Resource\\Data\\PlaceingOrder1.csv
    :FOR  ${Keys}  IN  @{Data}
     \   Loginc  ${Keys}
     \   GoingToMenu
@@ -84,7 +84,7 @@ Ordering With Out Payment
     \   Add Brunch Menu
     \   Add Lunch Menu
     #\   placeing order  ${Keys}
-    ${Data}  Get CSV Data  C:\\Users\\R~N~K~V\\Documents\\Neeraj\\Selenium\\Affine labs\\Cupon Creation\\Resource\\Data\\Data1.csv
+    ${Data}  Get CSV Data  F:\\neeraj\\jenkines\\Resource\\Data\\Data1.csv
    :FOR  ${Keys}  IN  @{Data}
     \   Loginp  ${Keys}
     \   Pay At Restarent No
