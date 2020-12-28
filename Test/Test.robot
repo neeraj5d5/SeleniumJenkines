@@ -24,7 +24,7 @@ Get CSV Data
     [Return]  ${Data}
 
 *** Test Cases ***
-#Test
+Test
   Set Selenium Timeout  10s
 
     ${Data}  Get CSV Data  F:\\neeraj\\jenkines\\Resource\\Data\\Data1.csv
